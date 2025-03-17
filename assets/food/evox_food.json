@@ -1,0 +1,622 @@
+[
+    {
+        "name": "Proteinski Doručak",
+        "type": "Doručak",
+        "ingredients": [
+            "kuvana jaja",
+            "feta sira",
+            "dimljene pileće grudi",
+            "krastavac",
+            "paradajz",
+            "integralni tost"
+        ],
+        "preparation": "Jaja dodamo u šerpu sa hladnom vodom i stavimo na ringlu na najjaču temperaturu dok ne dođe do ključanja, a zatim merimo oko 8-9 min ukoliko želimo da jaja budu skroz kuvana. Hleb istostiramo da bude hrskav i serviramo sve zajedno na tanjiru sa ostalim sastojcima."
+    },
+    {
+        "name": "Tortilja sa Pilećim Grudima",
+        "type": "Doručak",
+        "ingredients": [
+            "tortilja",
+            "dimljene pileće grudi",
+            "2 kašike skyr sira",
+            "feta sir",
+            "iceberg salata",
+            "krastavac",
+            "so",
+            "250ml jogurta (0-1% mlečne masti)"
+        ],
+        "preparation": "Tortilju premažemo skyr sirom, dodamo listove iceberg salate, poređamo dimljene pileće grudi, krastavac, izmrvljenu fetu i preklopimo, pa zapečemo sa svake strane 30-ak sekundi na tiganju, kako bi bila hrskava."
+    },
+    {
+        "name": "Kremasta Palenta",
+        "type": "Doručak",
+        "ingredients": [
+            "palenta",
+            "2 briketa spanaća",
+            "feta sira",
+            "jaje",
+            "2 kašike skyr sira / low-fat grčkog jogurta",
+            "so"
+        ],
+        "preparation": "U proključalu vodu u šerpu stavimo 2 briketa spanaća i mešamo dok se ne otope, a zatim smanjujemo temperaturu, dodamo so, light puter i malo po malo palente uz konstantno mešanje. Kada je upila vodu nekih 80%, sklonimo je sa ringle, dodajemo jaje pa vraćamo nazad na ringlu kratko i mešamo bez prekida. Na kraju gore dodamo grčki jogurt i feta sir."
+    },
+    {
+        "name": "Jaja Kesadilja",
+        "type": "Doručak",
+        "ingredients": [
+            "jaja",
+            "tortilja",
+            "kašika biljnog mleka",
+            "pileće grudi",
+            "baby spanać",
+            "rendana mozzarella/gauda",
+            "iceberg salata",
+            "so, biber",
+            "kašičica maslinovog ulja"
+        ],
+        "preparation": "Jaja posolimo, dodamo kašiku mleka, biber i umutimo sve zajedno i dodamo baby spanać, pa ih pečemo kao kajganu. Tortilju presečemo do pola tako da dobijemo 4 strane, pa na svaku četvrtinu dodamo različite sastojke - 1/4 jaj sa spanaćem, 2/4 pileće grudi, rendanu mozzarellu i 4/4 iceberg salatu. Preklopimo sve i zapečemo sa svake strane."
+    },
+    {
+        "name": "Omlet sa Pršutom i Sirom",
+        "type": "Doručak",
+        "ingredients": [
+            "jaja",
+            "kašika biljnog mleka",
+            "suva pršuta",
+            "rendana mozzarella",
+            "mix salata",
+            "čeri paradajz",
+            "manji krastavac",
+            "so, biber",
+            "kašika maslinovog ulja",
+            "integralni hleb"
+        ],
+        "preparation": "Jaja umutimo zajedno sa kašikom biljnog mleka i dodamo so i biberi. Izlijemo sve to na zagrejan tiganj sa malo maslinovog ulja, pa kroz 10-ak sekundi pospemo sa rendanim sirom. Kada je omlet gotov, serviramo sve zajedno sa suvom pršutom i salatom."
+    },
+    {
+        "name": "Doručak iz Rerne",
+        "type": "Doručak",
+        "ingredients": [
+            "tortilja",
+            "paprika",
+            "tikvice",
+            "baby spanać",
+            "so, biber",
+            "3 jaja",
+            "beli sir bez laktoze"
+        ],
+        "preparation": "Povrće sitno iseckati. Tortilju položiti u posudu za pečenje. Unutra pomešati jaja sa začinima, povrćem i sirom, pa zapeći u rerni oko 25 min na 180 stepeni."
+    },
+    {
+        "name": "Piletina sa Kuvanim Graškom i Krompirom",
+        "type": "Ručak",
+        "ingredients": [
+            "piletina",
+            "grašak",
+            "mladi krompir",
+            "paradajz sos",
+            "kockice za supu",
+            "crni luk",
+            "so, biber, beli luk u prahu",
+            "malo maslinovog ulja"
+        ],
+        "preparation": "Piletinu iseckamo na trake, začnimo (so/vegeta) i pečemo na maslinovom ulju. Na malo maslinovog ulja dinstamo sitno iseckan crni luk i posolimo kako ne bi izgoreo, a zatim kroz 2-3 min dodajemo zamrznut grašak, komade krompira i prelijemo vodom tako da prekrije + dodamo 1/2 kockice za supu i kuvamo na srednje-jakoj vatri 20-25 min (dok krompir ne omekša). Kada je pri kraju dodajemo paradajz sos i začine (so, biber, beli luk u prahu) i mešamo sve zajedno još par minuta. Serviramo sve zajedno."
+    },
+    {
+        "name": "Mlevena Junetina sa Povrćem",
+        "type": "Ručak",
+        "ingredients": [
+            "mlevena nemasna junetina",
+            "1/2 crnog luka",
+            "1 čen belog luka",
+            "šargarepa",
+            "krompir",
+            "1/2 crvene paprike",
+            "grašak",
+            "kašika paradajz sosa",
+            "so, biber, aleva paprika",
+            "kašičica maslinovog ulja",
+            "1/2 kockice za supu"
+        ],
+        "preparation": "Zagrejemo tiganj sa malo maslinovog ulja i dodamo sitno iseckan crni i beli luk, pa posolimo kako ne bi sve to zagorelo i dinstamo 3-5 min. Zatim dodamo mlevenu junetinu, dinstamo sve zajedno i razbijamo grudvice kako bi junetina bila što sitnija (dinstamo oko 5 min, dok ne bude gotova). Dodajemo iseckano povrce (krompir, šargarepu i grašak), promešamo sve zajedno i dodamo začine (so, biber, vegetu, alevu papriku i kašiku paradajz sosa) i mešamo dok se začini ne rasporede. Potom prelijemo proključalom vodom, ubacimo 1/2 kockice za supu i promesamo. Ostavimo da se kuva na srednjoj temperaturi oko 30 min. Po ukusu dodajemo još začina na kraju (so, biber...)."
+    },
+    {
+        "name": "Hrskava Piletina sa Pireom i Salatom",
+        "type": "Ručak",
+        "ingredients": [
+            "piletina",
+            "mladi krompir",
+            "80-100ml biljnog mleka",
+            "krastavac",
+            "paradajz",
+            "kašičica light putera",
+            "kašika skyr sira",
+            "2 kašike prezli",
+            "2 kašike rendanog parmezana",
+            "jaje",
+            "so,biber, origano, beli luk u prahu",
+            "kašičica maslinovog ulja"
+        ],
+        "preparation": "Napravimo miks za zdraviju verziju pohovanja: 2 kašike prezli, 2 kašike rendanog parmezana, so, beli luk u prahu, origano, biber i sve promešamo. Piletinu umočimo u umućeno jaje, zatim u miks za pohovanje, a onda poprskamo sa malo maslinovog ulja i pečemo na pek papiru u rerni oko 20 min (dok ne bude gotovo). Za to vreme pripremimo pire. Skuvamo krompir sa kašičicom soli, zatim ga procedimo, izgnječimo, dodamo light puter, mleko, so, skyr sir, biber i sve izmiksujemo. Po potrebi dodajemo manje ili više mleka u zavisnosti od željene gustine. Paradajz i krastavac iseckamo, poprskamo sa malo maslinovog ulja i posolimo."
+    },
+    {
+        "name": "Tuna Pasta",
+        "type": "Ručak",
+        "ingredients": [
+            "tuna u komadu",
+            "pasta",
+            "čeri paradajz",
+            "krastavac",
+            "kašika crvenog luka",
+            "4-5 crnih maslina",
+            "kašika maslinovog ulja",
+            "kašičica balsamica",
+            "kašičica limunovog soka",
+            "1/2 kašičica senfa",
+            "so, biber, beli luk u prahu"
+        ],
+        "preparation": "Pastu skuvamo prema uputstvu na pakovanju sa kašičicom soli. Za to vreme pripremimo salatu - iseckamo krastavac, čeri paradajz, masline. Tunu ocedimo. Dressing napravimo tako što pomešamo: maslinovo ulje, balsamico, senf, limunov sok, so, biber, beli luk u prahu i sve dobro promešamo kako bi se svi sastojci sjedinili. Kada je pasta gotova, ohladimo je da bude skroz hladna a zatim je stavimo u ciniju, dodamo svo iseckano povrce u činiju, prelijemo dressingom i promešamo kako bi se ukusi spojili."
+    },
+    {
+        "name": "Tortilja sa Piletinom i Povrćem",
+        "type": "Ručak",
+        "ingredients": [
+            "piletina",
+            "tortilja",
+            "20g kukuruza",
+            "iceberg salata",
+            "kašika skyr sira",
+            "rendana mozzarella/gauda",
+            "čeri paradajz",
+            "malo krastavca",
+            "so,vegeta",
+            "kašika senfa",
+            "kašičica maslinovog ulja"
+        ],
+        "preparation": "Piletinu iseckamo na kockice, začinimo sa senfom i vegetom, pa pečemo sa malo maslinovog ulja. Tortilju premažemo sa skyr sirom, dodamo iceberg salatu, kukuruz, rendani sir, iseckan čeri paradajz, sitno iseckan krastavac i sve preklopimo a zatim pečemo 2-3 min sa svake strane."
+    },
+    {
+        "name": "Kremasta Piletina",
+        "type": "Ručak",
+        "ingredients": [
+            "parče pilećeg filea po porciji",
+            "čeri paradajz",
+            "luk crni ili crveni",
+            "grčki jogurt/skyr",
+            "mala pavlaka za kuvanje isto biljna ili obična",
+            "začini (so, biber, mešavina začina za piletinu ili koje god začine volite)",
+            "njoki",
+            "vezica peršuna",
+            "preko dodati još malo rendanog sira gauda ili neki drugi"
+        ],
+        "preparation": "Piletinu posoliti pa propržiti na tiganju ili pripremiti u rerni! Sitno iseckan luk i čeri propržiti dok čeri ne pusti vodu, zatim dodati pavlaku za kuvanje i 2 kašike grčkog jogurta i začinii dobro! Zatim sve sastojke izblendati ručnim mikserom. Spojiti sos sa pripremljenom piletinom. Preko dodati pripremljene njoke i sitno iseckan peršun kao i izrendan sir koji se topi"
+    },
+    {
+        "name": "Piletina sa Kuskusom",
+        "type": "Ručak",
+        "ingredients": [
+            "Kuskus",
+            "Piletina",
+            "500g pilećeg karabataka bez kosti",
+            "sok od pola limuna",
+            "začini (1 kašičica soli i aleve paprike, 1/4 kašičice bibera, 1/2 kašičice mešavine začina za piletinu)",
+            "malo maslinovog ili nekog drugog ulja",
+            "tri kasike grckog jogurta",
+            "Dresing",
+            "1/3 kašičice senfa",
+            "1/2 kašičice light majoneza",
+            "sok od pola limuna",
+            "malo peršuna"
+        ],
+        "preparation": "Piletina: Sve pomešati i ubaciti u rernu na 200 stepeni oko 30 minuta. Kuskus prokuvamo par minuta i posolimo."
+    },
+    {
+        "name": "Pesto-Pileća Pasta",
+        "type": "Ručak",
+        "ingredients": [
+            "integralna pasta - obariti",
+            "piletina (2 manja filea) posoliti i proprziti u tiganju",
+            "2.5 kašike pesto sosa po porciji",
+            "1 kašičica grčkog jogurta",
+            "1 mocarela",
+            "čeri paradajz",
+            "parmezan i lesnik po vrhu opciono"
+        ],
+        "preparation": "Obariti integralnu pastu. Pileći file posoliti i propržiti u tiganju. Na kraju sve to pomešati."
+    },
+    {
+        "name": "Losos sa Kuskusom",
+        "type": "Ručak",
+        "ingredients": [
+            "kuskus",
+            "začini (so, bibier, šta god volite)",
+            "losos"
+        ],
+        "preparation": "Losos dobro posoliti ili začiniti željenim začinima i zapeći u rerni 30-ak min na 200 stepeni. Kukus pripremiti kao što piše na pakovanju i posoliti. Brokoli obariti u šerpici i posoliti."
+    },
+    {
+        "name": "Ćureće Pesto Loptice sa Kuskusom",
+        "type": "Ručak",
+        "ingredients": [
+            "500g mlevene ćuretine",
+            "1 luk",
+            "malo peršuna",
+            "2 jaja",
+            "2 kašike prezli",
+            "1 kašika pesto sosa",
+            "so, biber",
+            "kuskus",
+            "krastavac"
+        ],
+        "preparation": "U činiju pomešati sve sastojke, oblikovati u loptice i peći u rerni oko 25-30 minuta na 200 stepeni. Trebalo bi da dobijete oko 20-25 kuglica iz ove smese (zavisi od veličine kuglica)."
+    },
+    {
+        "name": "Losos sa Kuskusom i Rukolom",
+        "type": "Ručak",
+        "ingredients": [
+            "losos",
+            "začini (so, bibier, šta god volite)",
+            "kuskus",
+            "rukola",
+            "Dresing",
+            "soja sos",
+            "med",
+            "secki lešnici"
+        ],
+        "preparation": "Parce lososa zacini I ispeci u rerni na pola sata. Kuskus pipremiti na nacin koji pise na pakovanju. Dodati dresing od soja sosa I meda. Po vrhu posuti seckanim lesnicima."
+    },
+    {
+        "name": "Tortilje sa Mlevenim Mesom",
+        "type": "Ručak",
+        "ingredients": [
+            "500g mlevene junetine",
+            "1 crni luk",
+            "1 čen belog luka",
+            "1 kašika paradajz pirea",
+            "malo origana, bosiljka (ili mešavine začina po želji)",
+            "so, biber",
+            "tortilje",
+            "zelena salata",
+            "1 paradajz",
+            "1/2 krastavca"
+        ],
+        "preparation": "Na malo maslinovog ulja propržiti crni i beli luk, pa dodati mleveno meso. Kada je meso gotovo, dodati paradajz pire (ili pelat), origano, bosiljak (ili neku drugu mešavinu začina) i začiniti po ukusu. U tortilju dodati fil od mesa, zelenu salatu, paradajz i krastavac."
+    },
+    {
+        "name": "Piletina i Brokoli sa Pirinčem",
+        "type": "Ručak",
+        "ingredients": [
+            "pileći file",
+            "brokoli",
+            "pirinač",
+            "začini (so, biber, kari, kurkuma, beli luk u prahu)"
+        ],
+        "preparation": "Piletinu iseći na kockice i začiniti. Brokoli iseći na cvetove. U tiganju propržiti piletinu, dodati brokoli i pirinač, pa naliti vodom. Dodati začine i kuvati dok pirinač ne bude gotov."
+    },
+    {
+        "name": "Oslić sa Blitvom i Krompirom",
+        "type": "Ručak",
+        "ingredients": [
+            "oslić",
+            "blitva",
+            "krompir",
+            "začini (so, biber, beli luk u prahu)"
+        ],
+        "preparation": "Krompir iseći na kockice i skuvati. Osolić posoliti i ispeći u rerni ili na tiganju. Blitvu obariti i začiniti. Servirati oslić sa blitvom i krompirom."
+    },
+    {
+        "name": "Piletina sa Pečurkama i Kuskusom",
+        "type": "Ručak",
+        "ingredients": [
+            "pileći file",
+            "pečurke",
+            "crni luk",
+            "200ml vode",
+            "1 kašika gustina",
+            "1 kašika soja sosa",
+            "malo belog luka u prahu",
+            "so, biber",
+            "kuskus"
+        ],
+        "preparation": "Piletinu iseći na kockice i propržiti na malo maslinovog ulja. Dodati seckani crni luk i šampinjone, pa dinstati dok voda ne ispari. Dodati brašno i promešati, pa naliti sa 200ml vode. Dodati soja sos, beli luk u prahu, so i biber. Kada se zgusne, dodati kuskus i promešati. Servirati toplo."
+    },
+    {
+        "name": "Lazanje sa Ćuretinom",
+        "type": "Ručak",
+        "ingredients": [
+            "500g mlevene ćuretine",
+            "1 crni luk",
+            "1 čen belog luka",
+            "1 šargarepa",
+            "1/2 crvene paprike",
+            "1 konzerva paradajz pelata",
+            "1 kašika paradajz pirea",
+            "malo origana, bosiljka (ili mešavine začina)",
+            "so, biber",
+            "kore za lazanje",
+            "150g mocarele",
+            "50g parmezana"
+        ],
+        "preparation": "Na malo maslinovog ulja propržiti crni i beli luk, pa dodati mleveno meso. Dodati iseckanu šargarepu i papriku, pa dinstati dok ne omekšaju. Dodati paradajz pire (ili pelat), origano, bosiljak (ili neku drugu mešavinu začina) i začiniti po ukusu. U pleh ređati kore za lazanje, fil od mesa, rendanu mocarelu i parmezan. Ponoviti postupak dok se ne potroše sastojci. Peći u rerni oko 30 minuta na 200 stepeni."
+    },
+    {
+        "name": "Grčki Giros",
+        "type": "Ručak",
+        "ingredients": [
+            "500g pilećeg filea",
+            "1 kašičica origana",
+            "1 kašičica belog luka u prahu",
+            "1/2 kašičice slatke paprike",
+            "1/4 kašičice cimeta",
+            "so, biber",
+            "tortilje",
+            "1 paradajz",
+            "1/2 krastavca",
+            "1 crveni luk",
+            "100g feta sira",
+            "tzatziki sos"
+        ],
+        "preparation": "Piletinu iseći na tanke trake i začiniti. Peći u rerni oko 20 minuta na 200 stepeni. U tortilju dodati piletinu, iseckan paradajz, krastavac, luk, feta sir i tzatziki sos. Urolati i poslužiti."
+    },
+    {
+        "name": "Piletina sa Brokolijem i Pirinčem",
+        "type": "Ručak",
+        "ingredients": [
+            "pileći file",
+            "brokoli",
+            "pirinač",
+            "začini (so, biber, kari, kurkuma, beli luk u prahu)"
+        ],
+        "preparation": "Piletinu iseći na kockice i začiniti. Brokoli iseći na cvetove. U tiganju propržiti piletinu, dodati brokoli i pirinač, pa naliti vodom. Dodati začine i kuvati dok pirinač ne bude gotov."
+    },
+    {
+        "name": "Bakalar sa Blitvom i Krompirom",
+        "type": "Ručak",
+        "ingredients": [
+            "bakalar",
+            "blitva",
+            "krompir",
+            "začini (so, biber, beli luk u prahu)"
+        ],
+        "preparation": "Krompir iseći na kockice i skuvati. Bakalar posoliti i ispeći u rerni ili na tiganju. Blitvu obariti i začiniti. Servirati bakalar sa blitvom i krompirom."
+    },
+    {
+        "name": "Tuna Salata",
+        "type": "Užina",
+        "ingredients": [
+            "1 konzerva tune",
+            "1 kašika skyr sira",
+            "1/2 crvenog luka",
+            "1/3 krastavca",
+            "1 šaka čeri paradajza",
+            "1 šaka rukole"
+        ],
+        "preparation": "Sve sastojke pomešati u činiji."
+    },
+    {
+        "name": "Pileća Salata",
+        "type": "Užina",
+        "ingredients": [
+            "100g pilećeg filea",
+            "1 kašika skyr sira",
+            "1/2 crvenog luka",
+            "1/3 krastavca",
+            "1 šaka čeri paradajza",
+            "1 šaka rukole"
+        ],
+        "preparation": "Sve sastojke pomešati u činiji."
+    },
+    {
+        "name": "Grčki Jogurt sa Voćem i Čia Semenkama",
+        "type": "Užina",
+        "ingredients": [
+            "250ml grčkog jogurta (0-1% mlečne masti)",
+            "1 kašika meda",
+            "1 kašika čia semenki",
+            "3-4 oraha"
+        ],
+        "preparation": "Sve sastojke sjediniti u posudi i dobro promešati. Dodati još meda ukoliko volite slađe."
+    },
+    {
+        "name": "Smuti od Banane i Šumskog Voća",
+        "type": "Užina",
+        "ingredients": [
+            "1 banana",
+            "1/2 šolje smrznutog šumskog voća",
+            "1/2 šolje grčkog jogurta",
+            "malo meda (po želji)",
+            "malo vode ili mleka po izboru"
+        ],
+        "preparation": "Staviti sve sastojke u blender (bananu, šumsko voće, jogurt i med). Dodati malo vode ili mleka, u zavisnosti od željene gustine i izblendirati."
+    },
+    {
+        "name": "Čokoladni Čia Puding",
+        "type": "Užina",
+        "ingredients": [
+            "3 kašike čia semenki",
+            "1 kašika kakao praha",
+            "1/2 kašičice cimeta",
+            "1 kašika meda",
+            "par kapi arome vanile",
+            "150 ml mleka"
+        ],
+        "preparation": "Sve sastojke dobro promešati i ostaviti u frižideru da odstoji minimum 2 sata."
+    },
+    {
+        "name": "Proteinski Vafli",
+        "type": "Užina",
+        "ingredients": [
+            "1 šolja ovsenih pahuljica",
+            "1/2 šolje proteina surutke",
+            "1/4 šolje kokosovog brašna",
+            "1/2 kašičice praška za pecivo",
+            "1/4 kašičice soli",
+            "1 jaje",
+            "1/4 šolje jogurta",
+            "1/4 šolje mleka",
+            "1 kašika otopljenog kokosovog ulja",
+            "voće po izboru (maline, jagode, borovnice)"
+        ],
+        "preparation": "Pomešati sve suve sastojke (ovsena kaša, protein, kokosovo brašno, prašak za pecivo, so). U posebnoj posudi umutiti jaje, pa dodati jogurt, mleko i kokosovo ulje. Sve sjediniti i peći u aparatu za vafle."
+    },
+    {
+        "name": "Ovsena Kaša sa Bananom i Kikiriki Puterom",
+        "type": "Užina",
+        "ingredients": [
+            "1/2 šolje ovsenih pahuljica",
+            "1 šolja vode ili mleka",
+            "1/4 kašičice soli",
+            "1/2 banane",
+            "1 kašika kikiriki putera"
+        ],
+        "preparation": "Ovsene pahuljice pomešati sa vodom ili mlekom i soli, pa kuvati na laganoj vatri dok ne omekšaju. Dodati iseckanu bananu i kikiriki puter, pa promešati."
+    },
+    {
+        "name": "Salata od Povrća sa Piletinom",
+        "type": "Večera",
+        "ingredients": [
+            "100g grilovane piletine",
+            "1 šaka zelene salate",
+            "1/2 paradajza",
+            "1/4 krastavca",
+            "1/2 crvenog luka",
+            "maslinovo ulje, so, biber"
+        ],
+        "preparation": "Piletinu iseći na komadiće. Povrće oprati i iseckati. Sve sastojke pomešati u činiji i začiniti maslinovim uljem, solju i biberom."
+    },
+    {
+        "name": "Omlet sa Spanaćem",
+        "type": "Večera",
+        "ingredients": [
+            "2 jaja",
+            "1 kašika mleka",
+            "1 šaka spanaća",
+            "1/4 crvenog luka",
+            "so, biber"
+        ],
+        "preparation": "Umutiti jaja sa mlekom, solju i biberom. Na tiganju propržiti crni luk, dodati spanać i dinstati dok ne omekša. Preliti sa jajima i peći dok omlet ne bude gotov."
+    },
+    {
+        "name": "Grilovani Losos sa Brokolijem",
+        "type": "Večera",
+        "ingredients": [
+            "100g fileta lososa",
+            "1 šolja brokolija",
+            "maslinovo ulje, so, biber"
+        ],
+        "preparation": "Losos posoliti i pobiberiti, pa premazati maslinovim uljem. Grilovati na roštilju ili tiganju dok ne bude gotov. Brokoli skuvati na pari ili u vodi. Servirati losos sa brokolijem."
+    },
+    {
+        "name": "Potaž od Brokolija",
+        "type": "Večera",
+        "ingredients": [
+            "brokoli",
+            "crni luk",
+            "1 čen belog luka",
+            "1 kašika maslinovog ulja",
+            "so, biber",
+            "malo muskatnog oraščića"
+        ],
+        "preparation": "Na maslinovom ulju propržiti crni i beli luk, dodati brokoli i naliti vodom. Kuvati dok brokoli ne omekša, pa izblendati štapnim mikserom. Začiniti solju, biberom i muskatnim oraščićem."
+    },
+    {
+        "name": "Piletina sa Tikvicama i Pirinčem",
+        "type": "Večera",
+        "ingredients": [
+            "pileći file",
+            "tikvice",
+            "crni luk",
+            "1 čen belog luka",
+            "1 kašika maslinovog ulja",
+            "so, biber",
+            "malo karija"
+        ],
+        "preparation": "Na maslinovom ulju propržiti crni i beli luk, dodati piletinu iseckanu na kockice i tikvice iseckane na kolutove. Dinstati dok piletina ne bude gotova, pa dodati pirinač i naliti vodom. Začiniti solju, biberom i karijem. Kuvati dok pirinač ne bude gotov."
+    },
+    {
+        "name": "Salata od Testenine sa Tunjevinom",
+        "type": "Večera",
+        "ingredients": [
+            "testenina",
+            "1 konzerva tune",
+            "1/2 crvenog luka",
+            "1/4 krastavca",
+            "1 šaka čeri paradajza",
+            "maslinovo ulje, so, biber"
+        ],
+        "preparation": "Testeninu skuvati prema uputstvu na pakovanju. Tunjevinu ocediti od ulja. Povrće oprati i iseckati. Sve sastojke pomešati u činiji i začiniti maslinovim uljem, solju i biberom."
+    },
+    {
+        "name": "Musaka od Karfiola",
+        "type": "Večera",
+        "ingredients": [
+            "karfiol",
+            "500g mlevenog mesa",
+            "1 crni luk",
+            "1 čen belog luka",
+            "1 šargarepa",
+            "1/2 crvene paprike",
+            "1 konzerva paradajz pelata",
+            "1 kašika paradajz pirea",
+            "malo origana, bosiljka (ili mešavine začina)",
+            "so, biber",
+            "2 jaja",
+            "100ml mleka",
+            "50g parmezana"
+        ],
+        "preparation": "Karfiol skuvati u slanoj vodi. Na malo maslinovog ulja propržiti crni i beli luk, pa dodati mleveno meso. Dodati iseckanu šargarepu i papriku, pa dinstati dok ne omekšaju. Dodati paradajz pire (ili pelat), origano, bosiljak (ili neku drugu mešavinu začina) i začiniti po ukusu. U pleh ređati karfiol, fil od mesa, pa preliti umućenim jajima sa mlekom i posuti parmezanom. Peći u rerni oko 30 minuta na 200 stepeni."
+    },
+    {
+        "name": "Piletina sa Mozzarellom i Paradajzom",
+        "type": "Večera",
+        "ingredients": [
+            "pileći file",
+            "1 paradajz",
+            "1 mocarela",
+            "bosiljak",
+            "maslinovo ulje, so, biber"
+        ],
+        "preparation": "Piletinu iseći na filete i istanjiti tučkom za meso. Posoliti, pobiberiti i premazati maslinovim uljem. Na svaki file staviti kolutove paradajza i mocarele, pa posuti bosiljkom. Peći u rerni oko 20 minuta na 200 stepeni."
+    },
+    {
+        "name": "Testenina sa Povrćem",
+        "type": "Večera",
+        "ingredients": [
+            "testenina",
+            "1/2 crvenog luka",
+            "1 čen belog luka",
+            "1 šargarepa",
+            "1/2 crvene paprike",
+            "100g brokolija",
+            "100g karfiola",
+            "maslinovo ulje, so, biber"
+        ],
+        "preparation": "Testeninu skuvati prema uputstvu na pakovanju. Na malo maslinovog ulja propržiti crni i beli luk, dodati iseckanu šargarepu, papriku, brokoli i karfiol. Dinstati dok povrće ne omekša. Pomešati sa testeninom i začiniti solju i biberom."
+    },
+    {
+        "name": "Rižoto sa Piletinom i Pečurkama",
+        "type": "Večera",
+        "ingredients": [
+            "pirinač",
+            "pileći file",
+            "pečurke",
+            "crni luk",
+            "1 čen belog luka",
+            "1 kašika maslinovog ulja",
+            "so, biber",
+            "malo belog vina"
+        ],
+        "preparation": "Na maslinovom ulju propržiti crni i beli luk, dodati piletinu iseckanu na kockice i pečurke. Dinstati dok piletina ne bude gotova. Dodati pirinač i naliti vodom. Začiniti solju, biberom i belim vinom. Kuvati dok pirinač ne bude gotov."
+    },
+    {
+        "name": "Palenta sa Sirom",
+        "type": "Večera",
+        "ingredients": [
+            "palenta",
+            "100g feta sira",
+            "1 jaje",
+            "so, biber"
+        ],
+        "preparation": "U proključalu vodu dodati palentu i kuvati dok ne omekša. Dodati feta sir, jaje i začiniti solju i biberom. Promešati i servirati."
+    }
+]
