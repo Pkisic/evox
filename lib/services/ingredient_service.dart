@@ -12,7 +12,11 @@ class IngredientService {
 
     return [
       for (final map in ingredientMap)
-        Ingredient(id: map['id'] as int, name: map['name'] as String),
+        Ingredient(
+          id: map['id'] as int,
+          name: map['name'] as String,
+          measureId: map['measure_id'] as int,
+        ),
     ];
   }
 
@@ -31,9 +35,12 @@ class IngredientService {
     }
   }
 
-  Future<int> saveOne(name) async {
+  Future<int> saveOne(String name, int measureId) async {
     final database = await _databaseService.db;
-    var id = database.insert('Ingredient', {'name': name});
+    var id = database.insert('Ingredient', {
+      'name': name,
+      'measure_id': measureId,
+    });
     return id;
   }
 }

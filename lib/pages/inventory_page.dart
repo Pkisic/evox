@@ -1,7 +1,9 @@
 import 'package:evox/mixins/add_ingredient_dialog.dart';
 import 'package:evox/models/inventory.dart';
+import 'package:evox/models/measure_local.dart';
 import 'package:evox/services/ingredient_service.dart';
 import 'package:evox/services/inventory_service.dart';
+import 'package:evox/services/measure_service.dart';
 import 'package:flutter/material.dart';
 
 class InventoryPage extends StatefulWidget {
@@ -18,6 +20,8 @@ class _InventoryPageState extends State<InventoryPage>
 
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _quantityController = TextEditingController();
+  final MeasureService _measureService = MeasureService();
+  int? measureId;
 
   @override
   void saveIngedient() async {
@@ -26,13 +30,17 @@ class _InventoryPageState extends State<InventoryPage>
 
     final IngredientService ingredientService = IngredientService();
     final InventoryService inventoryService = InventoryService();
-    final ingredientId = await ingredientService.saveOne(name);
+    final ingredientId = await ingredientService.saveOne(name, measureId!);
     //final inventoryId =
     await inventoryService.createInventoryListing(
       ingredientId,
       int.parse(quantity),
     );
     update();
+  }
+
+  Future<List<MeasureLocal>> getAllMeasures() async {
+    return await _measureService.getAll();
   }
 
   @override
@@ -44,6 +52,12 @@ class _InventoryPageState extends State<InventoryPage>
 
   update() {
     setState(() {});
+  }
+
+  Future<MeasureLocal> getMeasureFromId(measureId) async {
+    return await _measureService.getMeasureFromId(measureId).then((value) {
+      return value;
+    });
   }
 
   @override
@@ -123,6 +137,28 @@ class _InventoryPageState extends State<InventoryPage>
                   keyboardType: TextInputType.numberWithOptions(),
                   controller: _quantityController,
                 ),
+                FutureBuilder<List<MeasureLocal>>(
+                  future: getAllMeasures(),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      return DropdownButtonFormField(
+                        value: snapshot.data?.first.id,
+                        onChanged: (x) {
+                          measureId = x;
+                        },
+                        items:
+                            snapshot.data!.map((e) {
+                              return DropdownMenuItem(
+                                value: e.id,
+                                child: Text(e.name),
+                              );
+                            }).toList(),
+                      );
+                    } else {
+                      return CircularProgressIndicator();
+                    }
+                  },
+                ),
               ],
             ),
           ),
@@ -158,33 +194,37 @@ class _InventoryPageState extends State<InventoryPage>
     int quantity,
     Function update,
   ) {
+    final thirdWidth = MediaQuery.of(context).size.width / 3;
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         SizedBox(
-          width: MediaQuery.of(context).size.width / 3,
+          width: thirdWidth,
           child: Text(
             inventory.ingredient.name,
             style: Theme.of(context).textTheme.headlineSmall,
           ),
         ),
         SizedBox(
-          width: MediaQuery.of(context).size.width / 3,
-          child: Text(
-            "$quantity",
-            style: Theme.of(context).textTheme.headlineSmall,
+          width: thirdWidth,
+          child: FutureBuilder(
+            future: getMeasureFromId(inventory.ingredient.measureId),
+            builder: (context, snapshot) {
+              return Text(
+                "$quantity ${snapshot.data?.name}",
+                style: Theme.of(context).textTheme.headlineSmall,
+                overflow: TextOverflow.ellipsis,
+              );
+            },
           ),
         ),
         SizedBox(
-          width: MediaQuery.of(context).size.width / 3,
+          width: thirdWidth,
           child: Row(
             children: [
               FilledButton(
                 onPressed: () async {
-                  await _inventoryService.updateQuantity(
-                    inventory,
-                    quantity + 1,
-                  );
+                  await _inventoryService.updateQuantity(inventory, ++quantity);
                   update();
                 },
                 style: OutlinedButton.styleFrom(
@@ -200,7 +240,7 @@ class _InventoryPageState extends State<InventoryPage>
                   try {
                     await _inventoryService.updateQuantity(
                       inventory,
-                      quantity - 1,
+                      --quantity,
                     );
                     update();
                   } on Exception catch (_) {

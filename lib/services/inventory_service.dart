@@ -26,10 +26,10 @@ class InventoryService {
   }
 
   Future<void> updateQuantity(Inventory inventory, quantity) async {
-    final database = await _databaseService.db;
     if (quantity < 0 || quantity > 1000000) {
       throw Exception('Quantity limit reached!');
     }
+    final database = await _databaseService.db;
     await database.update(
       'Inventory',
       inventory.toMap(quantity),

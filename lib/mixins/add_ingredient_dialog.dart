@@ -12,7 +12,7 @@ mixin AddIngredientDialog {
 
     final IngredientService ingredientService = IngredientService();
     final InventoryService inventoryService = InventoryService();
-    final ingredientId = await ingredientService.saveOne(name);
+    final ingredientId = await ingredientService.saveOne(name, 1);
     //final inventoryId =
     await inventoryService.createInventoryListing(
       ingredientId,

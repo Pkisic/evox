@@ -1,5 +1,6 @@
 import 'package:evox/pages/create_recipe.dart';
 import 'package:evox/pages/inventory_page.dart';
+import 'package:evox/pages/measurements.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -48,6 +49,17 @@ class _HomePageState extends State<HomePage> {
                 );
               },
               child: Text('Inventory'),
+            ),
+            FilledButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Measurements(name: 'Measurements'),
+                  ),
+                );
+              },
+              child: Text('Measurements'),
             ),
           ],
         ),

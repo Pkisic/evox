@@ -32,12 +32,14 @@ class DatabaseService {
         onCreate: (db, version) {
           //create tables
           var batch = db.batch();
+          batch.execute(createMeasurement);
           batch.execute(createIngredientTable);
           batch.execute(createInventoryTable);
           batch.execute(createRecepieIngredientTable);
           batch.execute(createRecepiesTable);
           batch.execute(insertIngredient);
           batch.execute(insertInventory);
+          batch.execute(insertMeasurement);
           batch.commit();
         },
         // onConfigure: (db) {},
