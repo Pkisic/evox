@@ -3,13 +3,14 @@ import 'dart:convert';
 import 'package:evox/mixins/add_ingredient_dialog.dart';
 import 'package:evox/models/ingredient.dart';
 import 'package:evox/services/ingredient_service.dart';
+import 'package:evox/services/recipe_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_quill/flutter_quill.dart';
 
 class CreateRecepie extends StatefulWidget {
   final String name;
 
-  CreateRecepie({super.key, required this.name});
+  const CreateRecepie({super.key, required this.name});
 
   @override
   State<CreateRecepie> createState() => _CreateRecepieState();
@@ -25,6 +26,7 @@ class _CreateRecepieState extends State<CreateRecepie>
   Map<String, TextEditingController> controllers = {};
 
   final IngredientService _ingredientService = IngredientService();
+  final RecipeService _recipeService = RecipeService();
 
   void saveRecepie() {
     String name = nameTextController.text;
@@ -33,6 +35,7 @@ class _CreateRecepieState extends State<CreateRecepie>
     print(name);
     print(duration);
     print(instructions);
+    _recipeService.createRecipe(name, int.parse(duration), instructions);
   }
 
   Future<List<Ingredient>> getAllIngredients() async {
@@ -88,6 +91,8 @@ class _CreateRecepieState extends State<CreateRecepie>
             ),
           ],
         ),
+        SizedBox(height: 20),
+        Row(children: [Text('data')]),
         SizedBox(height: 20),
         Row(
           children: [

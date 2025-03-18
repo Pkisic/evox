@@ -2,15 +2,15 @@ import 'package:evox/models/measure_local.dart';
 import 'package:evox/services/measure_service.dart';
 import 'package:flutter/material.dart';
 
-class Measurements extends StatefulWidget {
+class MeasurePage extends StatefulWidget {
   final String name;
-  const Measurements({super.key, required this.name});
+  const MeasurePage({super.key, required this.name});
 
   @override
-  State<Measurements> createState() => _MeasurementsState();
+  State<MeasurePage> createState() => _MeasurePageState();
 }
 
-class _MeasurementsState extends State<Measurements> {
+class _MeasurePageState extends State<MeasurePage> {
   final MeasureService _measureService = MeasureService();
 
   Future<List<MeasureLocal>> getAllMeasures() async {
