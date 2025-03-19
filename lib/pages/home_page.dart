@@ -1,6 +1,7 @@
 import 'package:evox/pages/recipe/create_recepie.dart';
 import 'package:evox/pages/inventory/inventory_page.dart';
 import 'package:evox/pages/measurements/measure_page.dart';
+import 'package:evox/pages/recipe/recipies_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -25,7 +26,15 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            FilledButton(onPressed: () {}, child: Text('List')),
+            FilledButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RecipiesPage()),
+                );
+              },
+              child: Text('List'),
+            ),
             FilledButton(
               onPressed: () {
                 Navigator.push(

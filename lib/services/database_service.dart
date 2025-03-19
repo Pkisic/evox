@@ -45,7 +45,7 @@ class DatabaseService {
         // onConfigure: (db) {},
         // onUpgrade: (db, oldVersion, newVersion) {},
         // onDowngrade: (db, oldVersion, newVersion) {},
-        // onOpen: (db) {},
+        // onOpen: (db) {}, //TODO: tutututu du
         version: version,
       );
       _db = db;
@@ -62,10 +62,10 @@ const createInventoryTable =
     'CREATE TABLE IF NOT EXISTS "Inventory" ("id"	INTEGER NOT NULL UNIQUE, "ingredient_id"	INTEGER NOT NULL, "quantity"	INTEGER NOT NULL, PRIMARY KEY("id" AUTOINCREMENT));';
 
 const createRecepiesTable =
-    'CREATE TABLE IF NOT EXISTS "Recipe" ("id" INTEGER NOT NULL UNIQUE,"duration" INTEGER,"meal_of_day_id" INTEGER, "instructions"	TEXT, PRIMARY KEY("id" AUTOINCREMENT));';
+    'CREATE TABLE IF NOT EXISTS "Recipe" ("id" INTEGER NOT NULL UNIQUE, "name"	TEXT, "duration" INTEGER,"meal_of_day_id" INTEGER, "instructions"	TEXT, PRIMARY KEY("id" AUTOINCREMENT));';
 
 const createRecepieIngredientTable =
-    'CREATE TABLE IF NOT EXISTS "RecipeIngredient" ("id"	INTEGER NOT NULL UNIQUE,"ingredient_id"	INTEGER NOT NULL,"recepie_id"	INTEGER NOT NULL,"quantity"	INTEGER NOT NULL, PRIMARY KEY("id" AUTOINCREMENT));';
+    'CREATE TABLE IF NOT EXISTS "RecipeIngredient" ("id"	INTEGER NOT NULL UNIQUE,"ingredient_id"	INTEGER NOT NULL,"recipe_id"	INTEGER NOT NULL,"quantity"	INTEGER NOT NULL, PRIMARY KEY("id" AUTOINCREMENT));';
 
 const createMeasurement =
     'CREATE TABLE IF NOT EXISTS "Measurement" ("id"	INTEGER NOT NULL UNIQUE,"name" TEXT NOT NULL, PRIMARY KEY("id" AUTOINCREMENT));';
