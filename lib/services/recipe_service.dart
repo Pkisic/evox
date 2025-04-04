@@ -8,9 +8,9 @@ class RecipeService {
   final DatabaseService _databaseService = DatabaseService.instance;
   final tableName = 'Recipe';
 
-  Future<void> createRecipe(
+  Future<bool> createRecipe(
     String name,
-    int duration,
+    int? duration,
     String instructions,
     Map<Ingredient, int> ingredients, {
     Mealofday mealOfDay = Mealofday.dorucak,
@@ -36,6 +36,7 @@ class RecipeService {
       instructions: instructions,
       mealofday: mealOfDay,
       ingredients: recipeIngredients,
+      duration: duration,
     );
 
     //insert recipies
@@ -51,8 +52,20 @@ class RecipeService {
     for (final e in recipeIngredients) {
       batch.insert('RecipeIngredient', e.toMap());
     }
-    batch.commit();
-    print(recipe);
+    var batchResults = await batch.commit();
+    // print(recipe);
+    return (newRecipeId != 0) && (batchResults.isEmpty);
+  }
+
+  getAllWithIngredients() async {
+    final db = await _databaseService.db;
+    // final List<Map<String, Object?>> recepieMap = await db.rawQuery(
+    //   'SELECT * FROM Recipe r LEFT JOIN RecipeIngredient ri ON r.id = ri.recipe_id LEFT JOIN Ingredient i ON ri.ingredient_id = i.id',
+    // );
+    final List<Map<String, Object?>> a = await db.rawQuery(
+      'SELECT * FROM RecipeIngredient ',
+    );
+    print(a);
   }
 
   getAll() async {

@@ -1,4 +1,5 @@
 import 'package:evox/models/recipe.dart';
+import 'package:evox/pages/recipe/edit_recepie.dart';
 import 'package:evox/services/recipe_service.dart';
 import 'package:flutter/material.dart';
 
@@ -37,6 +38,18 @@ class _RecipiesPageState extends State<RecipiesPage> {
                       return ListTile(
                         title: Text(recipe.name),
                         subtitle: Text('$recipe'),
+                        trailing: IconButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder:
+                                    (context) => EditRecepie(recipe: recipe),
+                              ),
+                            );
+                          },
+                          icon: Icon(Icons.edit),
+                        ),
                       );
                     },
                   );

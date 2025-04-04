@@ -29,4 +29,19 @@ class MeasureService {
         MeasureLocal(id: map['id'] as int, name: map['name'] as String),
     ];
   }
+
+  Future<List<MeasureLocal>> getMultipleFromIds(List<int> ids) async {
+    final database = await DatabaseService.instance.db;
+    final results = await database.query(
+      'Measurement',
+      limit: 1,
+      where: 'id IN (${List.filled(ids.length, '?').join(', ')})',
+      whereArgs: ids,
+    );
+    if (results.isEmpty) {
+      throw Exception('Not found');
+    } else {
+      return results.map((e) => MeasureLocal.fromRow(e)).toList();
+    }
+  }
 }

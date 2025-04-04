@@ -38,7 +38,7 @@ class _CreateRecepieState extends State<CreateRecepie>
     super.initState();
   }
 
-  void saveRecepie() {
+  Future<bool> saveRecepie() async {
     String name = nameTextController.text;
     String duration = durationTextController.text;
     String instructions = jsonEncode(_controller.document.toDelta().toJson());
@@ -53,15 +53,10 @@ class _CreateRecepieState extends State<CreateRecepie>
     Map<Ingredient, int> selection = Map.from(
       selectedIngredients,
     ).map((key, value) => MapEntry(key, int.tryParse(value.text)!));
-    print(selection);
-    // print(name);
-    // print(duration);
-    // print(instructions);
-    // print(selectedValue);
 
-    _recipeService.createRecipe(
+    return await _recipeService.createRecipe(
       name,
-      int.parse(duration),
+      int.tryParse(duration),
       instructions,
       selection,
       mealOfDay: mealofday,
@@ -89,7 +84,16 @@ class _CreateRecepieState extends State<CreateRecepie>
         child: createForm(),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => saveRecepie(),
+        onPressed: () async {
+          if (await saveRecepie()) {
+            Navigator.of(context).pop();
+          } else {
+            const snackBar = SnackBar(
+              content: Text('Unable to save the recipe!'),
+            );
+            ScaffoldMessenger.of(context).showSnackBar(snackBar);
+          }
+        },
         child: Icon(Icons.save),
       ),
     );
@@ -99,28 +103,40 @@ class _CreateRecepieState extends State<CreateRecepie>
     return ListView(
       shrinkWrap: true,
       children: [
-        Row(
-          children: [
-            Expanded(
-              flex: 3,
-              child: TextFormField(
-                decoration: InputDecoration(
-                  border: UnderlineInputBorder(),
-                  labelText: 'Recipe name',
+        Form(
+          autovalidateMode: AutovalidateMode.always,
+          child: Row(
+            children: [
+              Expanded(
+                flex: 3,
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    border: UnderlineInputBorder(),
+                    labelText: 'Recipe name',
+                  ),
+                  controller: nameTextController,
+                  validator: (text) {
+                    if (text == null || text.isEmpty) {
+                      return "Enter a value!";
+                    }
+                    if (!(text.length > 5) && text.isNotEmpty) {
+                      return "Enter valid name of more then 5 characters!";
+                    }
+                    return null;
+                  },
                 ),
-                controller: nameTextController,
               ),
-            ),
-            Expanded(
-              child: TextFormField(
-                decoration: InputDecoration(
-                  border: UnderlineInputBorder(),
-                  labelText: 'Duration',
+              Expanded(
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    border: UnderlineInputBorder(),
+                    labelText: 'Duration',
+                  ),
+                  controller: durationTextController,
                 ),
-                controller: durationTextController,
               ),
-            ),
-          ],
+            ],
+          ),
         ),
         SizedBox(height: 20),
 

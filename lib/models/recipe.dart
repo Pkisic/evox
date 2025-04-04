@@ -1,11 +1,10 @@
-import 'dart:ffi';
-
 import 'package:evox/enums/meal_of_day.dart';
 import 'package:evox/models/recipe_ingredient.dart';
 
 class Recipe {
   String name;
-  Int? duration;
+  int? duration;
+  int? id;
   Mealofday mealofday;
   String instructions;
   List<RecipeIngredient> ingredients;
@@ -15,6 +14,7 @@ class Recipe {
     required this.mealofday,
     required this.instructions,
     required this.ingredients,
+    this.duration,
   });
 
   getMealOfDayName() {
@@ -32,8 +32,9 @@ class Recipe {
   }
 
   Recipe.fromRow(Map<String, Object?> map)
-    : name = map['name'] as String,
-      duration = map['duration'] as Int?,
+    : id = map['id'] as int,
+      name = map['name'] as String,
+      duration = map['duration'] as int?,
       instructions =
           map['instructions']
               as String, // TODO: Instructions conversion from rich text to string
