@@ -1,4 +1,5 @@
 import 'package:evox/models/recipe.dart';
+import 'package:evox/pages/recipe/create_recepie.dart';
 import 'package:evox/pages/recipe/edit_recepie.dart';
 import 'package:evox/services/recipe_service.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class _RecipiesPageState extends State<RecipiesPage> {
   final RecipeService _recipeService = RecipeService();
 
   Future<List<Recipe>> getAllRecipies() async {
-    return await _recipeService.getAll();
+    return await _recipeService.getAllWithIngredients();
   }
 
   @override
@@ -37,18 +38,44 @@ class _RecipiesPageState extends State<RecipiesPage> {
                       Recipe recipe = snapshot.data![index];
                       return ListTile(
                         title: Text(recipe.name),
-                        subtitle: Text('$recipe'),
-                        trailing: IconButton(
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder:
-                                    (context) => EditRecepie(recipe: recipe),
-                              ),
-                            );
-                          },
-                          icon: Icon(Icons.edit),
+                        subtitle: Text(
+                          'Number of ingredients ${recipe.ingredients.length}',
+                        ),
+                        trailing: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            IconButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder:
+                                        (context) =>
+                                            EditRecepie(recipe: recipe),
+                                  ),
+                                );
+                              },
+                              icon: Icon(Icons.edit),
+                            ),
+                            IconButton(
+                              onPressed: () {
+                                const snackBar = SnackBar(
+                                  content: Text(
+                                    'Not yet!',
+                                  ), // TODO: Delete recepie
+                                );
+                                ScaffoldMessenger.of(
+                                  context,
+                                ).showSnackBar(snackBar);
+                              },
+                              icon: Icon(Icons.delete),
+                            ),
+                          ],
+                        ),
+                        leading: Image.asset(
+                          'assets/images/default_image.png',
+                          // height: 100,
+                          // width: 100,
                         ),
                       );
                     },

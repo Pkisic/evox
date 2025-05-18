@@ -35,10 +35,8 @@ class Recipe {
     : id = map['id'] as int,
       name = map['name'] as String,
       duration = map['duration'] as int?,
-      instructions =
-          map['instructions']
-              as String, // TODO: Instructions conversion from rich text to string
-      ingredients = List.empty(), // Ingredients List
+      instructions = map['instructions'] as String,
+      ingredients = List.empty(), //TODO:idk
       mealofday = Mealofday.values[map['meal_of_day_id'] as int];
 
   @override

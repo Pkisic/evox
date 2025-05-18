@@ -17,6 +17,11 @@ class RecipeIngredient {
     };
   }
 
+  RecipeIngredient.fromRow(Map<String, Object?> map)
+    : ingredientId = map['ingredient_id'] as int,
+      recepieId = map['recipe_id'] as int,
+      quantity = map['quantity'] as int;
+
   @override
   String toString() {
     return 'ingredient_id: $ingredientId, recipe_id: $recepieId, quantity: $quantity';

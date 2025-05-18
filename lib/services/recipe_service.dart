@@ -29,6 +29,7 @@ class RecipeService {
             quantity: e.value,
           );
         }).toList();
+    // print(recipeIngredients);
 
     //create recipe model
     var recipe = Recipe(
@@ -54,18 +55,28 @@ class RecipeService {
     }
     var batchResults = await batch.commit();
     // print(recipe);
-    return (newRecipeId != 0) && (batchResults.isEmpty);
+    return (newRecipeId != 0) && (batchResults.isNotEmpty);
   }
 
   getAllWithIngredients() async {
     final db = await _databaseService.db;
-    // final List<Map<String, Object?>> recepieMap = await db.rawQuery(
-    //   'SELECT * FROM Recipe r LEFT JOIN RecipeIngredient ri ON r.id = ri.recipe_id LEFT JOIN Ingredient i ON ri.ingredient_id = i.id',
-    // );
+    final recepies = await getAll();
     final List<Map<String, Object?>> a = await db.rawQuery(
       'SELECT * FROM RecipeIngredient ',
     );
-    print(a);
+    final recipeIngredients = [
+      for (final map in a) RecipeIngredient.fromRow(map),
+    ];
+
+    for (final m in recepies) {
+      final c =
+          recipeIngredients.where((x) {
+            return x.recepieId == m.id;
+          }).toList();
+
+      m.ingredients = c;
+    }
+    return recepies;
   }
 
   getAll() async {

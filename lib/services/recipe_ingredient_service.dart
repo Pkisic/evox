@@ -22,15 +22,17 @@ class RecipeIngredientService {
     List<int> ingredientIds =
         res.map((e) => e['ingredient_id'] as int).toList();
 
-    if (ingredientIds.isEmpty) return List.empty();
+    if (ingredientIds.isEmpty) return List<Map<String, dynamic>>.empty();
 
     List<Ingredient> ingredients = await _ingredientService.getIngredientsByIds(
       ingredientIds,
     );
 
-    if (ingredients.isEmpty) return List.empty();
+    if (ingredients.isEmpty) return List<Map<String, dynamic>>.empty();
 
     List<int> measureIds = ingredients.map((e) => e.measureId).toList();
+
+    if (measureIds.isEmpty) return List<Map<String, dynamic>>.empty();
 
     List<MeasureLocal> measures = await _measureService.getMultipleFromIds(
       measureIds,
